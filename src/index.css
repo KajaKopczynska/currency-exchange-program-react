@@ -1,13 +1,28 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*, ::after, ::before {
+  box-sizing: inherit;
+}
+
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  background-color: rgb(210, 224, 248);
+  max-width: 550px;
+  margin: 0 auto;
+  text-align: center;
+  color: #84878b;
+  line-height: 1.7;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  padding: 15px;
+  background-image: url("https://i.postimg.cc/ZK4gsJdr/plane.jpg");
+  background-repeat: no-repeat;
+  background-size: 900px;
+  background-position: center;
 }
