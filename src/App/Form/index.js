@@ -38,6 +38,7 @@ const Form = () => {
                     <span>
                         Wpisz kwotę jaką chcesz wymienić i wybierz walutę:
                     </span>
+                    <br></br>
                     <input
                         className="form__amount"
                         onChange={({ target }) => setAmount(target.value)}
@@ -62,7 +63,7 @@ const Form = () => {
                         )))}
                     </select>
                 </label>
-
+                <br></br>
                 <label>
                     Wybierz walutę jaką chcesz uzyskać:
                     <select
