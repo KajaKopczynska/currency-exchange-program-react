@@ -6,23 +6,22 @@ html {
   box-sizing: inherit;
 }
 
-.body {
+#root {
+  font-family: 'Montserrat', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 70vh;
-  background-color: rgb(210, 224, 248);
-  max-width: 550px;
-  margin: 0 auto;
-  text-align: center;
-  color: #84878b;
-  line-height: 1.7;
-  font-size: 16px;
-  font-weight: 400;
-  font-family: 'Montserrat', sans-serif;
-  padding: 15px;
-  background-image: url("https://i.postimg.cc/ZK4gsJdr/plane.jpg");
+  background-image: url("background.jpg");
   background-repeat: no-repeat;
   background-size: 900px;
   background-position: center;
+  background-color: rgb(210, 224, 248);
+  margin: 0 auto;
+  text-align: center;
+  color: #84878b;
+  line-height: 2;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 15px;
 }
