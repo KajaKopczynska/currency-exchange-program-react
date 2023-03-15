@@ -2,7 +2,7 @@
 [Click here to use currency converter] (https://kajakopczynska.github.io/currency-exchange-program-react/)
 
 ## **How it works**
-![Calculator GIF]()
+![Calculator GIF](currency-exchange-program-react.gif)
 
 You can convert the value of currencies such as PLN, EUR and USD. 
 
