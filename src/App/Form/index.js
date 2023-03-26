@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { currencies } from './currencies';
 import { Result } from './Result';
-import './style.css';
+import { StyledForm, Header, Currency, Button, Amount, StyledResult, Footer } from "./styled";
 
 const Form = () => {
 
@@ -31,16 +31,15 @@ const Form = () => {
     };
 
     return (
-        <form className="form" onSubmit={onFormSubmit}>
-            <h1 className="form__header"> Przelicznik walut </h1>
+        <StyledForm onSubmit={onFormSubmit}>
+            <Header> Przelicznik walut </Header>
             <p>
                 <label>
                     <span>
                         Wpisz kwotę jaką chcesz wymienić i wybierz walutę:
                     </span>
                     <br></br>
-                    <input
-                        className="form__amount"
+                    <Amount
                         onChange={({ target }) => setAmount(target.value)}
                         type="number"
                         step="0.01"
@@ -48,8 +47,7 @@ const Form = () => {
                         min="0"
                         required
                     />
-                    <select
-                        className="form__currency"
+                    <Currency
                         value={inputCurrency}
                         onChange={({ target }) => setInputCurrency(target.value)}
                     >
@@ -61,13 +59,12 @@ const Form = () => {
                                 {currency.short}
                             </option>
                         )))}
-                    </select>
+                    </Currency>
                 </label>
                 <br></br>
                 <label>
                     Wybierz walutę jaką chcesz uzyskać:
-                    <select
-                        className="form__currency"
+                    <Currency
                         value={outputCurrency}
                         onChange={({ target }) => setOutputCurrency(target.value)}
                     >
@@ -79,22 +76,22 @@ const Form = () => {
                                 {currency.short}
                             </option>
                         )))}
-                    </select>
+                    </Currency>
                 </label>
             </p>
 
-            <p className="form__paragraph">
-                <button className="form__button"> Przelicz</button>
+            <p>
+                <Button> Przelicz</Button>
             </p>
-            <p className="form__result">
+            <StyledResult>
                 Wynik:
                 <Result result={result} />
-            </p>
-            <p className="form__footer">
+            </StyledResult>
+            <Footer>
                 Przelicznik na podstawie kursu walut z dnia 26.01.2023 r.
-            </p>
+            </Footer>
 
-        </form >
+        </StyledForm >
     );
 
 };

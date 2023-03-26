@@ -1,4 +1,6 @@
-.form {
+import styled from "styled-components";
+
+export const StyledForm = styled.form`
     margin: 8px;
     background-color: rgb(245, 249, 255);
     padding: 5px;
@@ -7,21 +9,14 @@
     background: #E4EDFD;
     box-shadow: 10px 10px 49px #c2c9d7,
         -10px -10px 49px #ffffff;
+`;
 
-}
-
-.form__header {
+export const Header = styled.h1`
     font-size: 24px;
     font-weight: 500;
-}
+`;
 
-.form__fieldset {
-    margin: 0 auto;
-    max-width: 330px;
-    border: none;
-}
-
-.form__currency {
+export const Currency = styled.select`
     margin: 10px;
     padding: 5px;
     width: 80px;
@@ -32,9 +27,9 @@
     background: #EAF3FF;
     box-shadow: 5px 5px 12px #c7cfd9,
         -5px -5px 12px #ffffff;
-}
+`;
 
-.form__button {
+export const Button = styled.button`
     border: none;
     padding: 10px;
     margin: 10px;
@@ -47,18 +42,17 @@
     box-shadow: 5px 5px 12px #c7cfd9,
         -5px -5px 12px #ffffff;
     transition: 0.3s;
-}
 
-.form__button:hover {
+    &:hover {
     color: #eee;
     border-radius: 5px;
     background: #7E9BFF;
     box-shadow: inset 5px 5px 12px #6b84d9,
         inset -5px -5px 12px #91b2ff;
-}
+    }
+`;
 
-.form__amount {
-
+export const Amount = styled.input`
     border-radius: 5px;
     width: 150px;
     height: 30px;
@@ -69,9 +63,9 @@
     padding-left: 15px;
     box-shadow: inset 6px 6px 12px #cdd5e4,
         inset -6px -6px 12px #fbffff;
-}
+`;
 
-.form__result {
+export const StyledResult = styled.p`
     margin: 0 auto;
     padding: 10px;
     width: 200px;
@@ -84,24 +78,12 @@
     background: #7E9BFF;
     box-shadow: inset 5px 5px 12px #6b84d9,
         inset -5px -5px 12px #91b2ff;
-}
+`;
 
-.form__currencyResult {
-
-    border-radius: 5px;
-    padding: 10px;
-    font-weight: 600;
-    width: 65px;
-}
-
-
-
-
-.form__footer {
+export const Footer = styled.p`
     margin: 0 auto;
     max-width: 400px;
     font-size: 12px;
     font-style: italic;
     line-height: 1.5;
-
-}
+`;
