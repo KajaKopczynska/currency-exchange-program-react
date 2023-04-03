@@ -87,3 +87,11 @@ export const Footer = styled.p`
     font-style: italic;
     line-height: 1.5;
 `;
+
+export const Loading = styled.p`
+    color: rgb(1, 101, 81);
+`;
+
+export const Failure = styled.p`
+    color: crimson;
+`;

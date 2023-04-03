@@ -3,7 +3,7 @@ import Clock from './Clock';
 
 function App() {
   return (
-    <div className='app'>
+    <div>
       <Clock />
       <Form />
     </div>
