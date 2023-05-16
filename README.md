@@ -12,7 +12,7 @@ To create the application I have used:
 - React
 - downloading data from API
 ## Demo
-[Click here to use currency converter] (https://kajakopczynska.github.io/currency-exchange-program-react/)
+https://kajakopczynska.github.io/currency-exchange-program-react/
 
 # Getting Started with Create React App
 
