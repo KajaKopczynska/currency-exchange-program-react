@@ -1,22 +1,18 @@
 # **Currency converter**
-[Click here to use currency converter] (https://kajakopczynska.github.io/currency-exchange-program-react/)
-
+The currency converter allows you to convert a value from Polish currency to a selected currency. The currency rates are regularly updated from the European Central Bank, ensuring accurate and up-to-date conversions.
 ## **How it works**
 ![Calculator GIF](https://github.com/KajaKopczynska/currency-exchange-program-react/blob/main/public/currency-exchange-program-react.gif)
 
 You can convert the value of currencies such as PLN, EUR and USD. 
-
- ## **Technologies used in the project**
+## **Technologies used in the project**
 To create the application I have used:
 - HTML
 - CSS
 - JavaScript
-- Normalize
-- BEM convention
-- ES6+ features
-- GIT
-- Markdown
 - React
+- downloading data from API
+## Demo
+[Click here to use currency converter] (https://kajakopczynska.github.io/currency-exchange-program-react/)
 
 # Getting Started with Create React App
 
