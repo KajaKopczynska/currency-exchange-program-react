@@ -13,13 +13,13 @@ export const GlobalStyle = createGlobalStyle`
     #root {
          font-family: 'Montserrat', sans-serif;
          display: flex;
-         align-items: center;
+         align-items: top;
          justify-content: center;
-         min-height: 70vh;
+         min-height: 100vh;
          background-image: url("${background}");
          background-repeat: no-repeat;
          background-size: 900px;
-         background-position: center;
+         background-position: 50% 20%;
          background-color: rgb(210, 224, 248);
          margin: 0 auto;
          text-align: center;
