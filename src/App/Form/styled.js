@@ -4,7 +4,8 @@ export const StyledForm = styled.form`
     margin: 8px;
     background-color: rgb(245, 249, 255);
     padding: 5px;
-    max-width: 330px;
+    width: 320px;
+    min-height: 500px;
     border-radius: 20px;
     background: #E4EDFD;
     box-shadow: 10px 10px 49px #c2c9d7,
