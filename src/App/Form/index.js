@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { Result } from './Result';
-import { StyledForm, Header, Currency, Button, Amount, StyledResult, Footer, Loading, Failure } from "./styled";
+import { StyledForm, Header, Currency, Button, Amount, StyledResult, Footer, Failure } from "./styled";
 import { useRatesData } from './useRatesData';
+import { Loading } from './Loading';
 
 const Form = () => {
 
@@ -36,9 +37,7 @@ const Form = () => {
             <Header> Przelicznik walut </Header>
             {ratesData.state === "loading"
                 ? (
-                    <Loading>
-                        Trwa ładowanie...
-                    </Loading>
+                    <Loading />
                 )
                 : (
                     ratesData.state === "error" ? (
